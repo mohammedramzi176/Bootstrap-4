@@ -1,13 +1,12 @@
-<!-- SCRIPT FOR TOOLTIP -->
-     
-       <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
 
-    <!-- SCRIPT FOR CAROUSEL BUTTONS -->
-    <script>
+     
+      
+   $(document).ready(function(){
+           $('[data-toggle="tooltip"]').tooltip();
+    });
+
+
+    
         $(document).ready(function(){
             $("#mycarousel").carousel( { interval: 2000 } );
             $("#carouselButton").click(function(){
@@ -23,4 +22,4 @@
                 }
             });
         });
-    </script>
+    
