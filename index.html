@@ -332,7 +332,9 @@
 
     <!-- SCRIPT FOR CAROUSEL BUTTONS -->
     <script>
-       $("#carouselButton").click(function(){
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
                     $("#mycarousel").carousel('pause');
                     $("#carouselButton").children("span").removeClass('fa-pause');
@@ -344,6 +346,7 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+        });
     </script>
 
 
