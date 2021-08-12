@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync');
     
     del = require('del'),
+    imagemin = require('gulp-imagemin'),
     
     gulp.task('sass', function () {
         return gulp.src('./css/*.scss')
