@@ -46,3 +46,9 @@ gulp.task('copyfonts', function() {
   gulp.src('./node_modules/font-awesome/fonts/**/*.{ttf,woff,eof,svg}*')
   .pipe(gulp.dest('./dist/fonts'));
 });
+// Images
+gulp.task('imagemin', function() {
+   return gulp.src('img/*.{png,jpg,gif}')
+     .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+     .pipe(gulp.dest('dist/img'));
+ });
