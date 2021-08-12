@@ -40,5 +40,6 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('css', ['sass']);
+    grunt.registerTask('default', ['browserSync', 'watch']);
 
 };
