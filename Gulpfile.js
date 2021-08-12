@@ -7,6 +7,12 @@ var gulp = require('gulp'),
     
     del = require('del'),
     imagemin = require('gulp-imagemin'),
+    uglify = require('gulp-uglify'),
+    usemin = require('gulp-usemin'),
+    rev = require('gulp-rev'),
+    cleanCss = require('gulp-clean-css'),
+    flatmap = require('gulp-flatmap'),
+    htmlmin = require('gulp-htmlmin');
     
     gulp.task('sass', function () {
         return gulp.src('./css/*.scss')
